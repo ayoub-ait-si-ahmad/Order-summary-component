@@ -1,0 +1,187 @@
+/* global variable */
+:root {
+  --ffMain: "Red Hat Display", sans-serif;
+  --Bright-blue: rgb(56, 41, 224);
+  --Pale-blue: rgb(224, 232, 255);
+  --Very-pale-blue: rgb(245, 247, 255);
+  --Desaturated-blue: rgb(114, 128, 167);
+  --Dark-blue: rgb(31, 47, 86);
+  --hoki: rgba(113, 127, 166, 1);
+  --white: rgba(255, 255, 255, 1);
+  --meduim-slate-blue: rgba(118, 108, 241, 1);
+  --ghost-white: rgba(247, 249, 255, 1);
+}
+/* 
+* {
+  border: 1px solid red;
+} */
+
+body {
+  font-family: var(--ffMain);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--hoki);
+  background-color: var(--Pale-blue);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh;
+}
+
+.background__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-20%);
+  width: 100%;
+  z-index: -1;
+}
+
+.order__card {
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  width: 28.125rem;
+  overflow: hidden;
+}
+
+.order__card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__card__image {
+  width: 100%;
+  height: auto;
+}
+
+.inner__padding {
+ 
+  padding: 2.8rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__card__info {
+  text-align: center;
+ 
+}
+
+.order__card__title {
+  color: var(--Dark-blue);
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-bottom: 1.06rem;
+}
+
+.order__card__paragraph {
+  margin-bottom: 1.25rem;
+}
+
+.order__card__price {
+  background-color: var(--ghost-white);
+  border-radius: 0.6875rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.order__card__price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__card__price-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.order__card__price-plan {
+  text-align: left;
+}
+
+#annual__plan {
+  color: var(--Dark-blue);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.order__card__price-btn {
+  color: var(--Bright-blue);
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.order__card__price-btn:hover {
+  color: var(--meduim-slate-blue);
+  text-decoration-line: none;
+}
+
+.order__card__payment-btn {
+  background-color: var(--Bright-blue);
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  border-radius: 0.6875rem;
+  width: 22.125rem;
+  height: 3.125rem;
+  color: var(--white);
+  font-size: 0.9375rem;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.order__card__payment-btn:hover {
+  background: var(--meduim-slate-blue);
+}
+
+.order__card__cancel-btn {
+  color: var(--hoki);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  font-weight: 900;
+}
+
+.order__card__cancel-btn:hover {
+  color: var(--Dark-blue);
+}
+
+@media (max-width: 450px) {
+  .order__card {
+    width: 20.4375rem;
+  }
+  .inner__padding {
+    padding: 2rem 1.5rem;
+  }
+  .order__card__title {
+    margin-bottom: 1rem;
+  }
+  .order__card__paragraph {
+    margin-bottom: 1.5rem;
+  }
+  .order__card__price {
+    margin-bottom: 1.5rem;
+  }
+  .order__card__payment-btn {
+    width: 17.4375rem;
+    height: 3.125rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .background__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
