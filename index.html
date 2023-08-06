@@ -20,51 +20,54 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <picture>
-      <source 
-        srcset="./images/pattern-background-mobile.svg"
-        media="(max-width: 450px)"
-      />
+    <main role="main">
+      <div role="card" class="order__card">
+      <picture>
+        <source
+          srcset="./images/pattern-background-mobile.svg"
+          media="(max-width: 450px)"
+        />
 
-      <img
-        class="background__image"
-        src="./images/pattern-background-desktop.svg"
-        alt="background image"
-      />
-    </picture>
+        <img
+          class="background__image"
+          src="./images/pattern-background-desktop.svg"
+          alt="background image"
+        />
+      </picture>
 
-    <div class="order__card">
-      <img
-        class="order__card__image"
-        src="./images/illustration-hero.svg"
-        alt="a girl listening to music and dancing"
-      />
-      <div class="inner__padding">
-        <div class="order__card__info">
-          <h1 class="order__card__title">Order Summary</h1>
-          <p class="order__card__paragraph">
-            You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like!
-          </p>
+      
+        <img
+          class="order__card__image"
+          src="./images/illustration-hero.svg"
+          alt="a girl listening to music and dancing"
+        />
+        <div class="inner__padding">
+          <div role="cardinfo" class="order__card__info">
+            <h1 class="order__card__title">Order Summary</h1>
+            <p class="order__card__paragraph">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
 
-          <section class="order__card__price">
-            <div class="order__card__price-container">
-              <img
-                class="order__card__price-icon"
-                src="./images/icon-music.svg"
-                alt="music icon"
-              />
-              <div class="order__card__price-plan">
-                <h3 id="annual__plan">Annual Plan</h3>
-                <ins>$59.99/year</ins>
+            <section class="order__card__price">
+              <div class="order__card__price-container">
+                <img
+                  class="order__card__price-icon"
+                  src="./images/icon-music.svg"
+                  alt="music icon"
+                />
+                <div class="order__card__price-plan">
+                  <h2 id="annual__plan">Annual Plan</h2>
+                  <ins>$59.99/year</ins>
+                </div>
+                <button class="order__card__price-btn">Change</button>
               </div>
-              <button class="order__card__price-btn">Change</button>
-            </div>
-          </section>
-          <button class="order__card__payment-btn">Proceed to Payment</button>
-          <button class="order__card__cancel-btn">Cancel Order</button>
+            </section>
+            <button class="order__card__payment-btn">Proceed to Payment</button>
+            <button class="order__card__cancel-btn">Cancel Order</button>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
